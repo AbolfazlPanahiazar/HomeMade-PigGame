@@ -35,6 +35,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .player-0-panel,
@@ -76,7 +77,7 @@ body {
     content: "\2022";
     font-size: 70px;
     position: absolute;
-    color: rgb(29, 100, 207);
+    color: #EB4D4D;
     top: -18px;
     
 }
@@ -144,6 +145,8 @@ i {
     height: 100px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.308);
     border-radius: 10px;
+    transform: rotate(360deg);
+    transition: transform 1s;
 }
 
 .winner { background-color: #f7f7f7; }
