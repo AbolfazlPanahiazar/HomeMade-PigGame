@@ -35,7 +35,14 @@ document.querySelector('.btn-roll').addEventListener('click', () => {
 document.querySelector('.btn-hold').addEventListener('click', () => {
     scores[activePlayer] += roundScore;
     document.querySelector(`#score-${activePlayer}`).textContent = scores[activePlayer];
-    changePlayer();
+    if (scores[activePlayer] >= 20) {
+        document.querySelector(`#name-${activePlayer}`).textContent = 'Winner!';
+        document.getElementById('dice').src = './images/present.jpg';
+        document.querySelector(`#name-${activePlayer}`).classList.add('winner');
+        document.querySelector(`.player-${activePlayer}-panel`).classList.remove('active');
+    } else {
+        changePlayer();
+    }
 });
 
 function changePlayer() {

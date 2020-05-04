@@ -149,5 +149,5 @@ i {
     transition: transform 1s;
 }
 
-.winner { background-color: #f7f7f7; }
+.winner { background-color: #f3cf00c2; border-radius: 10px; padding: 5px; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
