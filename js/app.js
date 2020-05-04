@@ -21,8 +21,8 @@ document.querySelector("#current-1").textContent = "0";
 document.querySelector(".btn-roll").addEventListener("click", () => {
   diceNumber = Math.floor(Math.random() * 6) + 1;
   let diceObj = document.getElementById("dice");
-  diceObj.style.display = "block";
   diceObj.src = `./images/dice-${diceNumber}.png`;
+  diceObj.style.display = "block";
   if (diceNumber !== 1) {
     roundScore += diceNumber;
     document.querySelector(`#current-${activePlayer}`).textContent = roundScore;
